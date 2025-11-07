@@ -113,17 +113,19 @@ class HexoDeployer {
 
     // 转换文件内容
     convertContent(content) {
-        // 替换 [[xxx]] 为 Hexo 标准格式的 post_link 标签
+        // 替换 [[xxx]] 为标准markdown链接格式
         let converted = content.replace(/\[\[([^\]]+)\]\]/g, (match, linkContent) => {
             const [linkName, anchor] = linkContent.split('#');
             const cleanLink = linkName.split('#')[0];
 
-            // 使用 Hexo 的 post_link 标签格式
-            if (anchor) {
-                return `{% post_link ${cleanLink} ${anchor} %}`;
-            } else {
-                return `{% post_link ${cleanLink} %}`;
+            if (this.linkMapping.has(cleanLink)) {
+                const hexoUrl = this.linkMapping.get(cleanLink);
+                const finalUrl = anchor ? `${hexoUrl}#${anchor}` : hexoUrl;
+                return `[${linkName}](${finalUrl})`;
             }
+
+            // 如果没有找到映射，保持原样或添加警告，但不使用 post_link 标签
+            return `⚠️[${linkName}](javascript:void(0))`;
         });
 
         // 检查是否已经有front matter
