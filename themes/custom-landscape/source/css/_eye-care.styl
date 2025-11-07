@@ -1,0 +1,179 @@
+/* 护眼模式样式 - Eye Care Mode */
+
+/* 强制覆盖所有黑色文字为护眼色 */
+*
+  color: color-default !important
+
+/* 强制覆盖所有深色背景为护眼色 */
+body, article, main, #main, #content, .content, .post, .article
+  background-color: color-background !important
+
+/* 代码块护眼样式覆盖 */
+code, pre, .code, .highlight
+  background-color: #f6f8fa !important
+  color: color-default !important
+
+/* 表格护眼样式 */
+table, tr, td, th
+  background-color: #ffffff !important
+  color: color-default !important
+
+/* 暖色调滤镜，减少蓝光 */
+body
+  background-color: color-background
+  color: color-default !important
+  line-height: 1.7
+  font-family: 'HKHK', 'SourceCodeVF', 'Sauce Code Pro NF', monospace
+
+/* 为长时间阅读优化 */
+article
+  background-color: #ffffff !important
+  color: color-default !important
+  border-radius: 8px
+  padding: 2rem
+  margin: 1rem 0
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05)
+  transition: box-shadow 0.3s ease
+
+  &:hover
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08)
+
+/* 链接颜色调整，减少视觉疲劳 */
+a
+  color: color-link !important
+  text-decoration: none
+  border-bottom: 1px solid transparent
+  transition: all 0.2s ease
+
+  &:hover
+    color: #0550ae !important
+    border-bottom-color: #0969da
+
+/* 代码块护眼样式 */
+code, pre
+  background-color: #f6f8fa
+  border: 1px solid #e1e8ed
+  border-radius: 6px
+  font-family: 'SourceCodeVF', 'Sauce Code Pro NF', monospace
+
+pre
+  padding: 1rem
+  overflow-x: auto
+  line-height: 1.5
+
+code
+  padding: 0.2rem 0.4rem
+  font-size: 0.9em
+
+/* 标题优化 */
+h1, h2, h3, h4, h5, h6
+  color: #24292f !important
+  font-weight: 600
+  line-height: 1.3
+  margin-top: 2rem
+  margin-bottom: 1rem
+
+h1
+  font-size: 2rem
+  border-bottom: 1px solid color-border
+  padding-bottom: 0.5rem
+
+h2
+  font-size: 1.5rem
+
+h3
+  font-size: 1.25rem
+
+/* 引用块护眼样式 */
+blockquote
+  margin: 1rem 0
+  padding: 0.5rem 1rem
+  border-left: 4px solid #d1d9e0
+  background-color: #f6f8fa !important
+  color: color-default !important
+  border-radius: 0 6px 6px 0
+
+/* 表格护眼样式 */
+table
+  width: 100%
+  border-collapse: collapse
+  margin: 1rem 0
+  background-color: #ffffff
+  border-radius: 6px
+  overflow: hidden
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05)
+
+th, td
+  padding: 0.75rem 1rem
+  text-align: left
+  border-bottom: 1px solid color-border
+
+th
+  background-color: #f6f8fa
+  font-weight: 600
+  color: #24292f
+
+tr:hover
+  background-color: #f6f8fa
+
+/* 图片护眼样式 */
+img
+  max-width: 100%
+  height: auto
+  border-radius: 6px
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1)
+
+/* 护眼Alert样式调整 */
+.alert
+  border-radius: 8px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05)
+
+/* 侧边栏护眼样式 */
+.sidebar
+  background-color: #ffffff
+  border-radius: 8px
+  padding: 1rem
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05)
+
+/* 减少闪烁和动画 */
+*
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease
+
+/* 深色模式适配 */
+@media (prefers-color-scheme: dark)
+  body
+    background-color: #1a1f2e
+    color: #e6edf3
+
+  article
+    background-color: #161b22
+    color: #e6edf3
+
+  code, pre
+    background-color: #0d1117
+    border-color: #30363d
+    color: #e6edf3
+
+  blockquote
+    background-color: #0d1117
+    border-left-color: #30363d
+    color: #8b949e
+
+  a
+    color: #58a6ff
+
+    &:hover
+      color: #79c0ff
+
+/* 夜间护眼模式 */
+.night-mode
+  filter: brightness(0.9) contrast(0.95) hue-rotate(15deg)
+
+/* 阅读焦点模式 */
+.reading-mode
+  max-width: 800px
+  margin: 0 auto
+  padding: 2rem
+  background-color: #ffffff
+  border-radius: 8px
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)

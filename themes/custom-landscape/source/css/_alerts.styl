@@ -1,0 +1,121 @@
+/* GitHub Alerts/Callouts Styles */
+.alert {
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  border-left: 0.25rem solid;
+  border-radius: 0.375rem;
+  background-color: #fff;
+  color: #374151;
+
+  /* 使用SourceCodeVF字体 */
+  font-family: 'SourceCodeVF', 'Sauce Code Pro NF', monospace;
+
+  p {
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  p + p {
+    margin-top: 0.5rem;
+  }
+
+  /* 标题样式 */
+  .alert-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* 图标样式 */
+  .alert-icon::before {
+    margin-right: 0.5rem;
+  }
+}
+
+/* NOTE - 蓝色 */
+.alert-note {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+  color: #1e40af;
+
+  .alert-title::before {
+    content: "💡";
+  }
+}
+
+/* TIP - 绿色 */
+.alert-tip {
+  border-color: #10b981;
+  background-color: #ecfdf5;
+  color: #065f46;
+
+  .alert-title::before {
+    content: "✨";
+  }
+}
+
+/* IMPORTANT - 紫色 */
+.alert-important {
+  border-color: #8b5cf6;
+  background-color: #f3e8ff;
+  color: #5b21b6;
+
+  .alert-title::before {
+    content: "❗";
+  }
+}
+
+/* WARNING - 橙色 */
+.alert-warning {
+  border-color: #f59e0b;
+  background-color: #fffbeb;
+  color: #92400e;
+
+  .alert-title::before {
+    content: "⚠️";
+  }
+}
+
+/* CAUTION - 红色 */
+.alert-caution {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+  color: #991b1b;
+
+  .alert-title::before {
+    content: "🚨";
+  }
+}
+
+/* 支持GitHub标准语法 */
+blockquote.alert-note {
+  border-color: #3b82f6;
+  background-color: #eff6ff;
+  color: #1e40af;
+}
+
+blockquote.alert-tip {
+  border-color: #10b981;
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+blockquote.alert-important {
+  border-color: #8b5cf6;
+  background-color: #f3e8ff;
+  color: #5b21b6;
+}
+
+blockquote.alert-warning {
+  border-color: #f59e0b;
+  background-color: #fffbeb;
+  color: #92400e;
+}
+
+blockquote.alert-caution {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+  color: #991b1b;
+}

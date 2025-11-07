@@ -5,3 +5,6 @@
 header:
   show_banner: false
   show_title: false
+
+# Favicon settings
+favicon: /favicon.ico
