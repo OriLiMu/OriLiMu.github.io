@@ -211,10 +211,43 @@ categories: 思维方法
         }
     }
 
+    // 推送到GitHub
+    pushToGitHub() {
+        try {
+            this.log('📤 检查并推送到GitHub...');
+
+            process.chdir(CONFIG.hexoRoot);
+
+            // 检查是否有未提交的更改
+            const gitStatus = execSync('git status --porcelain', { encoding: 'utf8' });
+
+            if (gitStatus.trim()) {
+                this.log('📝 发现更改，开始提交和推送...');
+
+                // 添加所有更改
+                execSync('git add .', { stdio: 'inherit' });
+
+                // 创建提交信息（包含时间戳）
+                const commitMessage = `自动部署: $(date '+%Y-%m-%d %H:%M:%S')\n\n处理了 ${this.processedFiles.size} 个文件`;
+                execSync(`git commit -m "${commitMessage}"`, { stdio: 'inherit' });
+
+                // 推送到远程仓库
+                execSync('git push origin main', { stdio: 'inherit' });
+
+                this.log('✅ 推送到GitHub完成');
+            } else {
+                this.log('ℹ️ 没有发现更改，跳过推送。');
+            }
+
+        } catch (error) {
+            this.log(`❌ 推送到GitHub失败: ${error.message}`);
+        }
+    }
+
     // 主执行函数
     async run() {
         try {
-            this.log('📋 开始执行部署任务...');
+            this.log('📋 开始执行自动部署任务...');
 
             // 1. 建立链接映射
             this.buildLinkMapping();
@@ -228,10 +261,13 @@ categories: 思维方法
             // 3. 重新生成Hexo网站
             this.regenerateHexo();
 
-            this.log(`🎉 部署完成! 处理了 ${this.processedFiles.size} 个文件`);
+            // 4. 推送到GitHub
+            this.pushToGitHub();
+
+            this.log(`🎉 自动部署完成! 处理了 ${this.processedFiles.size} 个文件`);
 
         } catch (error) {
-            this.log(`❌ 部署失败: ${error.message}`);
+            this.log(`❌ 自动部署失败: ${error.message}`);
         }
     }
 }
