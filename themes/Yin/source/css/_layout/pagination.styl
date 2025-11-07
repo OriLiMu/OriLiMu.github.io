@@ -1,0 +1,41 @@
+#pagination {
+  padding: 1rem 0;
+
+  .pagination {
+    text-align: center;
+
+    .page-number, .extend {
+      display: inline-block;
+      background-color: $color-white;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      color: $color-black;
+      height: 1.6rem;
+      width: 1.6rem;
+      line-height: 1.6rem;
+      margin: 0 0.2rem;
+
+      &:hover {
+        background-color: $theme-color-active;
+        color: $color-white;
+        cursor pointer;
+      }
+    }
+
+    .extend {
+      padding: 0 5px;
+    }
+
+    .current {
+      background-color: $theme-color;
+      color: $color-white;
+      cursor: default;
+    }
+  }
+
+  .fa {
+    margin: 0 5px;
+  }
+}
