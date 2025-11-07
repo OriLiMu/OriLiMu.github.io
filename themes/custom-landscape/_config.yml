@@ -1,0 +1,7 @@
+# Custom Landscape Theme Configuration
+# Inherits from hexo-theme-landscape with customizations
+
+# Remove banner and header title to save space
+header:
+  show_banner: false
+  show_title: false
