@@ -124,8 +124,8 @@ class HexoDeployer {
                 return `[${linkName}](${finalUrl})`;
             }
 
-            // 如果没有找到映射，保持原样或添加警告，但不使用 post_link 标签
-            return `⚠️[${linkName}](javascript:void(0))`;
+            // 如果没有找到映射，直接忽略，不生成任何链接
+            return linkName;
         });
 
         // 检查是否已经有front matter
