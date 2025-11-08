@@ -1,0 +1,64 @@
+// 移动端响应式优化 - 减少空白
+@media mq-mobile
+  // 减少整体容器的左右边距
+  .outer
+    padding: 0 10px !important
+
+  // 减少文章内容的内边距
+  .article-entry
+    padding: 0 10px !important
+
+  // 减少文章头部的内边距
+  .article-header
+    padding: 15px 10px 0 !important
+
+  // 减少文章底部的内边距
+  .article-footer
+    margin: 0 10px 10px !important
+
+  // 减少块级元素之间的间距
+  .article
+    margin: 20px 0 !important
+
+  // 减少段落的上下间距
+  .article-entry p
+    margin: 1em 0 !important
+
+  // 减少标题的上下间距
+  .article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6
+    margin: 0.8em 0 !important
+
+  // 减少列表的上下间距
+  .article-entry ul, .article-entry ol
+    margin-top: 0.8em !important
+    margin-bottom: 0.8em !important
+
+  // 减少引用的间距
+  .article-entry blockquote
+    margin: 1em 10px !important
+
+  // 代码块优化
+  .article-entry pre
+    margin: 1em 0 !important
+
+  // 表格优化
+  .article-entry table
+    margin: 1em 0 !important
+
+  // 图片优化 - 减少上下边距
+  .article-entry img
+    margin: 1em auto !important
+
+@media mq-tablet
+  // 平板设备适中的优化
+  .outer
+    padding: 0 15px !important
+
+  .article-entry
+    padding: 0 15px !important
+
+  .article-header
+    padding: 20px 15px 0 !important
+
+  .article-footer
+    margin: 0 15px 15px !important
