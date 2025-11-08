@@ -7,9 +7,9 @@ const { execSync } = require('child_process');
 // 配置
 const CONFIG = {
     sourceDir: '/home/lizhe/OriNote/notes/Ori/思维方法',
-    hexoPostsDir: '/home/lizhe/CodeOri/OriLiMu.github.io/source/_posts',
-    hexoRoot: '/home/lizhe/CodeOri/OriLiMu.github.io',
-    logFile: '/home/lizhe/CodeOri/OriLiMu.github.io/deploy_log.txt'
+    hexoPostsDir: '/home/lizhe/CodeOri/MyBlogsLiMu/source/_posts',
+    hexoRoot: '/home/lizhe/CodeOri/MyBlogsLiMu',
+    logFile: '/home/lizhe/CodeOri/MyBlogsLiMu/deploy_log.txt'
 };
 
 class HexoDeployer {

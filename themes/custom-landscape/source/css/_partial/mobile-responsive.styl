@@ -1,64 +1,97 @@
-// 移动端响应式优化 - 减少空白
+// 移动端响应式优化 - 减少整个文字模块周围的空白
+
+// 全局修复：移除所有屏幕尺寸下的32px内边距
+article
+  padding: 8px !important
+  margin: 10px 0 !important
+
 @media mq-mobile
-  // 减少整体容器的左右边距
+  // 大幅减少整体容器的左右边距
   .outer
-    padding: 0 10px !important
+    padding: 0 5px !important
+    max-width: 100% !important
 
-  // 减少文章内容的内边距
-  .article-entry
-    padding: 0 10px !important
+  // 关键：移除section#main的grid系统边距
+  #main
+    margin: 0 !important
+    padding: 0 !important
+    width: 100% !important
 
-  // 减少文章头部的内边距
-  .article-header
-    padding: 15px 10px 0 !important
+  // 完全移除文章容器的内边距
+  .article-inner
+    padding: 0 !important
 
-  // 减少文章底部的内边距
-  .article-footer
-    margin: 0 10px 10px !important
-
-  // 减少块级元素之间的间距
+  // 减少文章模块的上下外边距
   .article
-    margin: 20px 0 !important
+    margin: 10px 0 !important
 
-  // 减少段落的上下间距
+  // 文章内容区域内边距最小化
+  .article-entry
+    padding: 0 8px !important
+
+  // 文章头部和底部内边距最小化
+  .article-header
+    padding: 10px 8px 5px !important
+
+  .article-footer
+    margin: 5px 8px 5px !important
+    padding-top: 10px !important
+
+  // 确保没有其他元素添加内边距
+  .article *
+    box-sizing: border-box !important
+
+  // 移除任何可能的额外内边距
+  .article-meta, .article-date, .article-category
+    padding: 0 !important
+    margin: 5px 0 !important
+
+  // 彻底移除article-inner的所有样式，包括$block扩展的样式
+  .article-inner
+    background: none !important
+    box-shadow: none !important
+    border: none !important
+    border-radius: 0 !important
+    padding: 0 !important
+    margin: 0 !important
+
+  // 段落和标题间距优化
   .article-entry p
-    margin: 1em 0 !important
-
-  // 减少标题的上下间距
-  .article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6
     margin: 0.8em 0 !important
 
-  // 减少列表的上下间距
+  .article-entry h1, .article-entry h2, .article-entry h3, .article-entry h4, .article-entry h5, .article-entry h6
+    margin: 0.6em 0 !important
+
+  // 其他元素间距优化
   .article-entry ul, .article-entry ol
-    margin-top: 0.8em !important
-    margin-bottom: 0.8em !important
+    margin-top: 0.6em !important
+    margin-bottom: 0.6em !important
 
-  // 减少引用的间距
   .article-entry blockquote
-    margin: 1em 10px !important
+    margin: 0.8em 5px !important
 
-  // 代码块优化
-  .article-entry pre
-    margin: 1em 0 !important
+  .article-entry pre, .article-entry table
+    margin: 0.8em 0 !important
 
-  // 表格优化
-  .article-entry table
-    margin: 1em 0 !important
-
-  // 图片优化 - 减少上下边距
   .article-entry img
-    margin: 1em auto !important
+    margin: 0.8em auto !important
 
 @media mq-tablet
   // 平板设备适中的优化
   .outer
-    padding: 0 15px !important
+    padding: 0 10px !important
+
+  // 移除section#main的grid系统边距（平板设备）
+  #main
+    margin: 0 !important
+    padding: 0 !important
+    width: 100% !important
 
   .article-entry
-    padding: 0 15px !important
+    padding: 0 12px !important
 
   .article-header
-    padding: 20px 15px 0 !important
+    padding: 15px 12px 0 !important
 
   .article-footer
-    margin: 0 15px 15px !important
+    margin: 0 12px 12px !important

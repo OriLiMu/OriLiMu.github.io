@@ -35,6 +35,13 @@ article
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05)
   transition: box-shadow 0.3s ease
 
+  // 移动端减少内边距
+  @media mq-mobile
+    padding: 0.5rem !important
+
+  @media mq-tablet
+    padding: 1rem !important
+
   &:hover
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08)
 
