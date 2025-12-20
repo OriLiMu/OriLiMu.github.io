@@ -1,6 +1,6 @@
 ---
 title: ThinkMethod
-date: 2025-12-19 00:00:00
+date: 2025-12-20 00:00:00
 tags: 思维方法
 categories: 思维方法
 ---
