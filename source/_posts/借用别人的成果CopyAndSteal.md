@@ -1,6 +1,6 @@
 ---
 title: 借用别人的成果CopyAndSteal
-date: 2025-12-21 00:00:00
+date: 2025-12-22 00:00:00
 tags: 思维方法
 categories: 思维方法
 ---
