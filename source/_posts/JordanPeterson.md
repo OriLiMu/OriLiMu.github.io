@@ -1,6 +1,6 @@
 ---
 title: JordanPeterson
-date: 2025-12-22 00:00:00
+date: 2025-12-23 00:00:00
 tags: 思维方法
 categories: 思维方法
 ---
