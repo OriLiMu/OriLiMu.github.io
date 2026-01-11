@@ -1,0 +1,94 @@
+<div class="categories-container">
+  <h1 class="categories-title">文章分类</h1>
+  <div class="categories-grid">
+    <div class="category-card">
+      <div class="category-icon">🏛️</div>
+      <h2 class="category-name">明朝</h2>
+      <p class="category-desc">明朝历史相关文章</p>
+      <a href="/categories/明朝/" class="category-link">查看文章</a>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">💻</div>
+      <h2 class="category-name">算法文章</h2>
+      <p class="category-desc">算法与编程相关文章</p>
+      <a href="/categories/算法文章/" class="category-link">查看文章</a>
+    </div>
+
+    <div class="category-card">
+      <div class="category-icon">📝</div>
+      <h2 class="category-name">个人笔记</h2>
+      <p class="category-desc">个人学习与思考笔记</p>
+      <a href="/categories/个人笔记/" class="category-link">查看文章</a>
+    </div>
+  </div>
+</div>
+
+<style>
+.categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.categories-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.category-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.category-icon {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.category-name {
+  font-size: 1.8em;
+  margin: 0 0 15px;
+  color: #333;
+}
+
+.category-desc {
+  color: #666;
+  margin: 0 0 25px;
+  font-size: 1em;
+}
+
+.category-link {
+  display: inline-block;
+  padding: 10px 30px;
+  background: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.category-link:hover {
+  background: #2980b9;
+}
+</style>
