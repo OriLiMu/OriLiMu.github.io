@@ -1,3 +1,9 @@
+---
+title: Leetcode上面有哪些错题?
+date: 2026-01-11 23:20:59
+categories: 算法文章
+---
+
 # Leetcode上面有哪些错题？
 
 126. Word Ladder II官方题解被我给叉了，复杂度是错的。讨论区一堆高票跟着中枪，基本团灭。

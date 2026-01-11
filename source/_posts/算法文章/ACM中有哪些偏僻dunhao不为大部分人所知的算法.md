@@ -1,3 +1,9 @@
+---
+title: ACM中有哪些偏僻、不为大部分人所知的算法
+date: 2026-01-11 23:20:59
+categories: 算法文章
+---
+
 # ACM中有哪些偏僻、不为大部分人所知的算法?
 
 我想起来之前在codeforces上看过一篇post，来自Um_nik大神的，"Things I don't know"，https://codeforces.com/blog/entry/92248里面提到了一些算法/数据结构，我感觉应该属于"偏僻"的算法吧哈哈。

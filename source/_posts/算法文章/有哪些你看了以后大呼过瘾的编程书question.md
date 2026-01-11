@@ -1,3 +1,9 @@
+---
+title: 有哪些你看了以后大呼过瘾的编程书?
+date: 2026-01-11 23:20:59
+categories: 算法文章
+---
+
 # 有哪些你看了以后大呼过瘾的编程书？
 
 《The Art of Assembly Language》。

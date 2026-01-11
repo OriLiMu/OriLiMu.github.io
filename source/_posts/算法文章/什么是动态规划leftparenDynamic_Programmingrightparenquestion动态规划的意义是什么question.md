@@ -1,3 +1,9 @@
+---
+title: 什么是动态规划（Dynamic_Programming）?动态规划的意义是什么?
+date: 2026-01-11 23:20:59
+categories: 算法文章
+---
+
 # 什么是动态规划（Dynamic Programming）？动态规划的意义是什么？
 
 0. intro 很有意思的问题。

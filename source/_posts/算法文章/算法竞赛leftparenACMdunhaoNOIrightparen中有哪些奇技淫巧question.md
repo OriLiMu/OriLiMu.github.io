@@ -1,3 +1,9 @@
+---
+title: 算法竞赛（ACM、NOI）中有哪些奇技淫巧?
+date: 2026-01-11 23:20:59
+categories: 算法文章
+---
+
 # 算法竞赛（ACM、NOI）中有哪些奇技淫巧？
 
 本人最高icpc ec final 金奖第四/ccpc 总决赛 季军，icpc world final 铜牌。

@@ -1,3 +1,9 @@
+---
+title: 洛谷刷到什么水平可以去刷codeforces
+date: 2026-01-11 23:20:59
+categories: 算法文章
+---
+
 # 洛谷刷到什么水平可以去刷codeforces ?
 
 洛谷刷到什么水平都可以去刷codeforces呀！

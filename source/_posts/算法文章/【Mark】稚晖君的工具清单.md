@@ -1,3 +1,9 @@
+---
+title: 【Mark】稚晖君的工具清单
+date: 2026-01-11 23:20:59
+categories: 算法文章
+---
+
 # 【Mark】稚晖君的工具清单
 
 章创意收集&整理：§ 思维导图 Xmind ZEN§ 云笔记 ： 印象笔记 OneNote 有道云笔记（ markdown）§ Markdown： Typora 免费 多平台 编辑器 无法云端存储专业类软件：硬件电路设计§ Altium Designer/DXP 前身是Protel 在大公司并不受欢迎§ Allegro和PADS适用于复杂的高密度HDI板§ Autodesk Eagle 开源硬件社区流行 好上手 转换开源项目的文件§ Fritzing 电路设计软件 矢量画图画风 说明文档配图结构设计&工业设计软件§ Rhinocores 参数建模 机械零部件 产品结构件§ Fusion 360 既支持参数化建模又支持T-spline设计 个人用免费§ Cinema4D 雕塑式设计 不规则曲面 游戏模型§ 其他建模软件：Solidworks UG Proe§ inkSpace 矢量图编辑 （个人推荐Affinity Designer）§ ArtCAM 雕刻机刀路文件§ Keyshot 模型渲染软件软件开发§ Visual Studio 宇宙第一IDEArduino用C/C++开发 装插件Visual Micro 熟悉VS环境 做硬件§ Android Studio 手机App 基于Jetbrain的JAVA IDE-Idea开发§ Jetbrain全家桶◊ PyCharm python和深度学习◊ Rider C#的IDE 配合Unity使用 作为外部编辑器来用◊ CLion 写c/c++◊ Unity 游戏开发引擎 3D场景仿真§ 嵌入式软件：◊ Keil 和 CubeMX 玩STM32一定熟悉◊ Arduino IDE 入门硬件首选◊ KendryteIDE 开发K210用的◊ Processing 数字多媒体艺术◊ Matlab 数学仿真§ 开发用小工具◊ XShell和XFtp 连接Linux服务器必备◊ 串口调试助手 串口猎人◊ 网络调试助手 NetAssist◊ CMake 跨平台的安装编译工具◊ GitGUI Git的GUI版本◊ CoolFormat 代码批量格式化工具◊ IDA Pro 反编译◊ WireShark 网络协议分析◊ SerialChart 串口绘图工具 调试PID非常方便◊ DXP 旧版本AD 转换文件◊ Netron 图形化查看神经网络模型的神器◊ Beyond Compare 代码改动对比神器发布于 2023-03-11 14:56​赞同 26​​添加评论​分享​取消收藏​ 举报收起​
