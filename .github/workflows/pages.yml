@@ -5,9 +5,15 @@ on:
     branches:
       - main # default branch
 
+# 并发控制: 取消正在运行的旧部署,只保留最新的
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -44,6 +50,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
