@@ -1,14 +1,14 @@
 ---
 title: tiddlywiki
-date: 2026-01-20 00:00:00
+date: 2026-01-21 00:00:00
 tags: 思维方法
 categories: 思维方法
 ---
 
 
 
-# tiddlywiki
+# 笔记最大的优势是,笔记的颗粒度很小.
+- 但是似乎我可以在 Obsidian 中用,也可以用记录很小的笔记来完成相关的功能.
+  - 缺点就是界面稍逊一筹
 
 
-# task
-- heading style
