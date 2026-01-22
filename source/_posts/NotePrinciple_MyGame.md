@@ -1,6 +1,6 @@
 ---
 title: NotePrinciple_MyGame
-date: 2026-01-21 00:00:00
+date: 2026-01-22 00:00:00
 tags: 思维方法
 categories: 思维方法
 ---
@@ -10,6 +10,7 @@ categories: 思维方法
 # 休闲游戏
 - everything is crab
 - roguelite
+- 运动打卡升级
 - 智力
 - 武力
 - 社交
