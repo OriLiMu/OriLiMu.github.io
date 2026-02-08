@@ -1,6 +1,6 @@
 ---
 title: tiddlywiki
-date: 2026-01-26 00:00:00
+date: 2026-02-08 00:00:00
 tags: 思维方法
 categories: 思维方法
 ---
